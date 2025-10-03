@@ -23,7 +23,7 @@ jobs:
     uses: LSEG-Immersion-Day-DevOps-workshop-2025/actions/.github/workflows/docker-push-ci.yml@main
     with:
       # IMPORTANT: Replace 'your-dockerhub-username' with your actual Docker Hub username
-      image_name: your-dockerhub-username/trip-planner-frontend
+      image_name: natthanons/trip-planner-frontend
       # We use the unique Git commit SHA as the image tag for versioning
       tag: ${{ github.sha }}
     secrets:
