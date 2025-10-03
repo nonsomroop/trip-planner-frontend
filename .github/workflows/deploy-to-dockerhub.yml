@@ -6,6 +6,8 @@ name: Deploy to Docker Hub
 on:
   push:
     branches: [main]
+  # Allow manual runs from GitHub Actions UI
+  workflow_dispatch:
 
 jobs:
   # First, run the CI checks to ensure the code is valid
