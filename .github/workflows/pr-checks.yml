@@ -6,6 +6,7 @@ name: Pull Request Checks
 on:
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   # First, run the CI checks to ensure the code builds and tests pass
