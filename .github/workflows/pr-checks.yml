@@ -6,8 +6,6 @@ name: Pull Request Checks
 on:
   pull_request:
     branches: [main]
-  # Allow manual runs from GitHub Actions UI
-  workflow_dispatch:
 
 jobs:
   # First, run the CI checks to ensure the code builds and tests pass
@@ -20,4 +18,4 @@ jobs:
     name: Trivy Vulnerability Scan
     # This job depends on the successful completion of the 'run-ci-checks' job
     needs: run-ci-checks
-    uses: Tonnamkit/actions/.github/workflows/security-scan-ci.yml@main
+    uses: LSEG-Immersion-Day-DevOps-workshop-2025/actions/.github/workflows/security-scan-ci.yml@main
